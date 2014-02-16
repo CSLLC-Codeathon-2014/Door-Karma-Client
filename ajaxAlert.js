@@ -1,3 +1,7 @@
+/*
+Based on  mozilla's AJAX guide. -https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+*/
+
 function() {
   var httpRequest;
   document.getElementById("ajaxButton").onclick = function() { makeRequest('test.html'); };
