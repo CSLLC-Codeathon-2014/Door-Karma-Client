@@ -60,3 +60,10 @@ function change(){
 		document.getElementById('check').innerHTML='Check In';
 	}
 }
+
+var checker = document.getElementById('check');
+if(checker.addEventListener){
+	checker.addEventListener("click", change, false);
+}else if(checker.attachEvent){
+	checker.attachEvent('onclick', change)
+}
