@@ -1,7 +1,6 @@
 function done(){
 	console.log('nailed that done');
 	var userName=document.getElementById('userInput').value;
-	var time=document.getElementById('timeInput').value;
 	var secret=document.getElementById('secretInput').value;
 	var ip=document.getElementById('serverIP').value;
 	var platform=document.getElementById('platformInput').value;
@@ -14,7 +13,6 @@ function done(){
 	window.localStorage.setItem("platform", platform);
 	window.localStorage.setItem("version", version);
 	window.localStorage.setItem("uuid", uuid);
-	window.localStorage.setItem("changeTime", true);
 	window.location="index.html";
 }
 
@@ -38,7 +36,6 @@ if(cButton.addEventListener){
 	cButton.attachEvent('onclick', cancel);
 }
 
-$('#timeInput').val(window.localStorage.getItem('time'));
 $('#userInput').val(window.localStorage.getItem('name'));
 $('#secretInput').val(window.localStorage.getItem('secret'));
 $('#serverIP').val(window.localStorage.getItem('serverIP'));
