@@ -1,50 +1,19 @@
-# PhoneGap Build Starter Application
+#Door Karma Cient
+This is the source for the web app for CS LLC Door Karma.
 
-> A Hello World application to get started with PhoneGap Build.
+##Usage
+*NOTE*: There is not currently a site hosting the server. We will note the location of the hosting site and the server address when it is running.
 
-## Usage
+1. Open the hosting site in your browser.
+2. Click the menu button at the top left.
+3. Configure your settings. You must have a unique username. You must also get the secret from a member of the LLC in order to use the service.
+4. Click "DONE!" to save the settings to your device.
 
-### Run Application
+* When you are in the TV Lounge, press "CHECK IN", and then press the people button. It should show you any outstanding requests for karma.
+* When you go to get the door, press "ANSWER KARMA" to let them know you're coming.
+* When you leave the lounge, press "CHECK OUT."
 
-    /www/index.html
-
-### Run Tests
-
-    /www/spec.html
-
-### PhoneGap/Build
-
-Create a new app with the following repository:
-
-    https://github.com/phonegap/phonegap-start.git
-
-## Updating the Application
-
-The application is based on the [Apache Cordova Hello World][cordova-app] app.
-
-### 1. Update the Source
-
-    cp cordova-app-hello-world/www www/
-
-__Do not replace `www/config.xml`.__
-
-__Do not replace `www/img/logo.png`.__
-
-### 2. Update index.html
-
-Replace `<h1>Apache Cordova</h1>` with `<h1>PhoneGap</h1>`.
-
-### 3. Update PhoneGap Version
-
-    <preference name="phonegap-version" value="x.x.x" />
-
-### 4. Commit
-
-    $ git commit -am "Version x.x.x"
-
-### 5. Tag
-
-    $ git tag x.x.x
-
-[cordova-app]: http://github.com/apache/cordova-app-hello-world
-
+* When you need door karma, press "LET ME IN."
+* You should see a list of people in the lounge in the People tab after a few seconds.
+* If you are let in, press "KARMA RECEIVED."
+* If you decide not to go in through that door, let people know by pressing "CANCEL KARMA."
