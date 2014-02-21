@@ -8,6 +8,9 @@ serverAddr = window.localStorage.getItem('serverIP')
 if ( serverAddr == null || serverAddr == "" )
 {
 	serverAddr = "10.0.6.20:5000"
+} else if ( !~serverAddr.indexOf(':') )
+{
+	serverAddr = serverAddr + ":5000"
 }
 
 //Cancels the request
