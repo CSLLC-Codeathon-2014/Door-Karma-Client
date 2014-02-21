@@ -116,13 +116,8 @@ if(pClick.addEventListener){
 var ul= document.getElementById("listPeople");
 var rR = false;
 var rG = false;
-var myVar = setInterval(function(){myTimer()}, Math.abs(window.localStorage.getItem("time") * 1000));
+var myVar = setInterval(function(){myTimer()}, 15 * 1000); // Will run myTimer() every 15 seconds
 function myTimer(){
-	if(window.localStorage.getItem("changeTime")){
-		stopTimer(myVar);
-		window.localStorage.setItem("changeTime", false);
-		myVar = setInterval(function(){myTimer()},Math.abs(window.localStorage.getItem("time")) * 1000);
-	}
 	if(rR){
 		waitingPollKarma(function(data){
 		console.log(data);
