@@ -7,7 +7,6 @@ function done(){
 	var version=document.getElementById('versionInput').value;
 	var uuid=document.getElementById('uuidInput').value;
 	window.localStorage.setItem("name", userName);
-	window.localStorage.setItem("time", time);
 	window.localStorage.setItem("secret", secret);
 	window.localStorage.setItem("serverIP", ip);
 	window.localStorage.setItem("platform", platform);
